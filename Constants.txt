@@ -1,0 +1,7 @@
+Types of Constants - 
+
+    1. NUMERIC_CONSTANTS - 1. 
+    2. STRING_CONSTANTS -
+    3. 
+    4. BOOLEAN_CONSTANS
+    5. NONE_CONSTANTS
