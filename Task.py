@@ -13,11 +13,18 @@
 
 name= input("Enter student name: ")
 marks = []
+pass_count=0
+fail_count=0
 for i in range(5):
     mark = int(input("Enter marks for subject: "))
     marks.append(mark)
+    if mark>=40:
+        pass_count+=1
+    else:
+        fail_count+=1    
 total_marks = sum(marks)
 percentage = (total_marks / 500) * 100
+
 
 print("Total Marks: ", total_marks)
 print("Percentage: ",percentage)
@@ -32,6 +39,7 @@ elif percentage >= 40:
 else:
     print(name," is Fail")
 
-
+print("Pass Count = ",pass_count)
+print("Fail Count = ",fail_count)
 print("Maximum Marks: ", max(marks))
 print("Minimum Marks: ", min(marks))
