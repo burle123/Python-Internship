@@ -6,10 +6,13 @@ ROLES = (
     ('user', 'User'),
 )
 
-# Create your models here.
 class User(AbstractUser):
     id = models.AutoField(primary_key=True)
-    username = models.CharField(max_length=150, unique=True, blank=True)
-    email = models.EmailField(unique=True, db_index=True) # db_index=True for search optimization
-    password = models.CharField(max_length=128)
-    role = models.CharField(choices = ROLES, max_length=10, default='user')
+    email = models.EmailField(unique=True, db_index=True)
+    full_name = models.CharField(max_length=255)
+    terms_accepted = models.BooleanField(default=False)
+    terms_accepted_at = models.DateTimeField(blank=True, null=True)
+    role = models.CharField(choices=ROLES, max_length=10, default='user')
+
+    def __str__(self):
+        return self.full_name or self.email
