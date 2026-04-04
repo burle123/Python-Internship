@@ -1,0 +1,2 @@
+This is the first lecture of File Handling in Python.
+Today we learn how to append data to a file.
