@@ -1,0 +1,84 @@
+✅ What is Logging?
+
+Logging is used to track events/messages while a program runs.
+
+Instead of using:
+print("Hello World")
+We use logging to get detailed runtime information like:
+
+Errors
+Warnings
+Debug messages
+Program flow
+Execution details
+
+
+✅ Why Use Logging Instead of Print?
+* print()
+
+Only displays output
+Not professional for real projects
+No levels or file storage
+
+* logging
+
+Gives structured messages
+Different severity levels
+Can save logs in file
+Helps in debugging and monitoring
+
+
+✅ Core Components of Logging
+
+1. Logger
+Entry point for logging
+Used to generate log messages
+
+Example:
+logger = logging.getLogger()
+
+2. Handler
+Decides where logs go
+
+Examples:
+Console
+File
+Database
+FileHandler()
+StreamHandler()
+
+
+3. Filter
+Filters unwanted logs
+
+Example:
+Only ERROR logs allowed.
+
+4. Formatter
+Defines log message format
+
+Example:
+%(asctime)s - %(levelname)s - %(message)s
+Output:
+2026-04-01 10:00:00 - INFO - Program Started
+
+
+✅ Logging Levels
+
+Level	Numeric Value	Use
+NOTSET	    0	        Logger not set - Describes Logger is not set.
+DEBUG	    10	        Detailed debugging info - Used while testing code. - logging.debug("Value of x = 5")
+INFO	    20	        General execution info - General information. - logging.info("Program Started")
+WARNING	    30	        Alert / something suspicious - Something unexpected but program still runs. - logging.warning("Low disk space")
+ERROR	    40	        Error occurred - When error happens. - logging.error("File not found")
+CRITICAL	50	        Serious / dangerous error - Very serious issue. - logging.critical("Database crashed")
+
+✅ Production vs Development
+
+Production:
+Use: WARNING, ERROR, CRITICAL
+To reduce unnecessary logs.
+
+Development
+Use:DEBUG, INFO
+To track everything.
