@@ -1,0 +1,63 @@
+✅ What is Regular Expression?
+Regular Expression (Regex) is used to search, match, extract, validate, and replace patterns in text.
+
+Used for:
+Email validation
+Mobile number checking
+Password rules
+Finding words in text
+Replacing text patterns
+Data cleaning
+
+
+✅ Why Use Regex?
+
+Instead of checking text manually:
+if "gmail.com" in email:
+Use regex for powerful pattern matching:
+re.search(r"\w+@gmail\.com", email)
+
+
+✅ Import Module
+import re
+
+
+✅ Important Regex Functions
+Function	    Use
+re.match()	    Checks pattern at beginning
+re.search()	    Finds first match anywhere
+re.findall()	Returns all matches
+re.finditer()	Returns iterator of matches
+re.sub()	    Replace pattern
+re.split()	    Split string using pattern
+re.fullmatch()	Entire string must match
+
+
+✅ Common Regex Symbols
+Symbol	Meaning
+.	    Any one character
+^	    Start of string
+$	    End of string
+*	    0 or more
++	    1 or more
+?	    0 or 1
+{n}	    Exactly n times
+{m,n}	Between m and n times
+[]	    Character set
+()	    Group
+
+
+✅ Special Sequences
+Pattern	Meaning
+\d	    Digit (0-9)
+\D	    Non-digit
+\w	    Word char (a-zA-Z0-9_)
+\W	    Non-word char
+\s	    Whitespace
+\S	    Non-whitespace
+
+✅ Flags
+Flag	Use
+re.I	Ignore case
+re.M	Multiline
+re.S	Dot matches newline
