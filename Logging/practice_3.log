@@ -1,0 +1,9 @@
+2026-04-26 10:51:23 - INFO - This is an info message
+2026-04-26 10:51:23 - WARNING - This is a warning message
+2026-04-26 10:51:38 - INFO - This is an info message
+2026-04-26 10:51:38 - WARNING - This is a warning message
+2026-04-26 10:52:15 - INFO - This is an info message
+2026-04-26 10:52:15 - WARNING - This is a warning message
+2026-04-26 10:54:30 - DEBUG - This is a debug message
+2026-04-26 10:54:30 - INFO - This is an info message
+2026-04-26 10:54:30 - WARNING - This is a warning message
